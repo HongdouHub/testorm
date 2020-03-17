@@ -1,0 +1,188 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7732132061680547093",
+      "lastPropertyId": "3:1081975766053351452",
+      "name": "BillDes",
+      "properties": [
+        {
+          "id": "1:3628983390935796456",
+          "name": "_id"
+        },
+        {
+          "id": "2:1401814377926620228",
+          "name": "billNo"
+        },
+        {
+          "id": "3:1081975766053351452",
+          "name": "des"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:1824315075072712021",
+      "lastPropertyId": "10:2382216360172763600",
+      "name": "SimpleEntity",
+      "properties": [
+        {
+          "id": "1:1863028349707167504",
+          "name": "_id"
+        },
+        {
+          "id": "2:5829634777374711642",
+          "name": "simpleBoolean"
+        },
+        {
+          "id": "3:2713955822195291763",
+          "name": "simpleByte"
+        },
+        {
+          "id": "4:4741341032733186063",
+          "name": "simpleShort"
+        },
+        {
+          "id": "5:6202912444833733898",
+          "name": "simpleInt"
+        },
+        {
+          "id": "6:4739518201528894959",
+          "name": "simpleLong"
+        },
+        {
+          "id": "7:957768191161752567",
+          "name": "simpleFloat"
+        },
+        {
+          "id": "8:4072779183374511296",
+          "name": "simpleDouble"
+        },
+        {
+          "id": "9:6477821119731201882",
+          "name": "simpleString"
+        },
+        {
+          "id": "10:2382216360172763600",
+          "name": "simpleByteArray"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:7607540918783140473",
+      "lastPropertyId": "10:890929718936388641",
+      "name": "SimpleIndexedEntity",
+      "properties": [
+        {
+          "id": "1:9169649071090802751",
+          "name": "_id"
+        },
+        {
+          "id": "2:4683844002572061012",
+          "name": "simpleBoolean"
+        },
+        {
+          "id": "3:808948629886421633",
+          "name": "simpleByte"
+        },
+        {
+          "id": "4:8896258300261490143",
+          "name": "simpleShort"
+        },
+        {
+          "id": "5:776028114379516819",
+          "indexId": "1:8928434996462856548",
+          "name": "simpleInt"
+        },
+        {
+          "id": "6:7049618287096511271",
+          "name": "simpleLong"
+        },
+        {
+          "id": "7:5928581864664089577",
+          "name": "simpleFloat"
+        },
+        {
+          "id": "8:2724684181854643701",
+          "name": "simpleDouble"
+        },
+        {
+          "id": "9:4145711786858133684",
+          "indexId": "2:1874201762450735380",
+          "name": "simpleString"
+        },
+        {
+          "id": "10:890929718936388641",
+          "name": "simpleByteArray"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:4867364385627723574",
+      "lastPropertyId": "11:8594117113223780956",
+      "name": "WaybillInfo",
+      "properties": [
+        {
+          "id": "1:4655897158812247693",
+          "name": "_id"
+        },
+        {
+          "id": "2:7986809494236516661",
+          "name": "goodsNo"
+        },
+        {
+          "id": "3:6627330553535161036",
+          "name": "goodsType"
+        },
+        {
+          "id": "4:768143383674853263",
+          "name": "containerNo"
+        },
+        {
+          "id": "5:3256272949318493582",
+          "name": "carLogoNo"
+        },
+        {
+          "id": "6:8076288792290618211",
+          "name": "transitDepotNo"
+        },
+        {
+          "id": "7:88882482975335527",
+          "name": "postNo"
+        },
+        {
+          "id": "8:916439221558959845",
+          "name": "stationNo"
+        },
+        {
+          "id": "9:320001638379317375",
+          "name": "operatorNo"
+        },
+        {
+          "id": "10:1386451463538054736",
+          "name": "opTime"
+        },
+        {
+          "id": "11:8594117113223780956",
+          "name": "uploadFlag"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:4867364385627723574",
+  "lastIndexId": "2:1874201762450735380",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

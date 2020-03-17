@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestORM</string>
+    <string name="sqlite_name">SQLite数据库</string>
+    <string name="green_dao_name">GreenDao数据库</string>
+    <string name="object_box_name">ObjectBox数据库</string>
+    <string name="realm_name">Realm数据库</string>
+    <string name="room_name">Room数据库</string>
+    <string name="loading_comm_dlg_str">数据加载中</string>
+</resources>

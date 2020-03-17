@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_operate_count_list">
+        <item>1</item>
+        <item>100</item>
+        <item>1000</item>
+        <item>10000</item>
+        <item>100000</item>
+    </string-array>
+
+    <string-array name="item_operate_model_list">
+        <item>通用-增删改查</item>
+        <item>查询-通过String</item>
+        <item>查询-通过Integer</item>
+        <item>查询-通过ID</item>
+    </string-array>
+</resources>

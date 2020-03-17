@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 转圈速度 -->
+    <integer name="welcome_progress_duration">100</integer>
+</resources>

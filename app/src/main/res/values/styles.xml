@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">-->
+<!--    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar">-->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--<item name="colorPrimary">@color/white</item>-->
+        <!--<item name="colorPrimaryDark">@color/white</item>-->
+        <!--<item name="colorAccent">@color/white</item>-->
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+<!--        <item name="android:windowNoTitle">true</item>-->
+    </style>
+
+    <!--<style name="Activity_Pop" parent="@android:style/Theme.Dialog">-->
+    <style name="Activity_Pop" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dlg_comm_bg_shape</item>
+        <item name="android:windowAnimationStyle">@style/dialog_base_animation</item>
+    </style>
+
+    <style name="dialog_base_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_show</item>
+        <item name="android:windowExitAnimation">@anim/dialog_dismiss</item>
+    </style>
+
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+</resources>

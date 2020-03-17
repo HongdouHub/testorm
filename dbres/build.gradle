@@ -1,0 +1,78 @@
+buildscript {
+    ext.objectboxVersion = '2.3.4'
+    repositories {
+        maven {
+            url "http://objectbox.net/beta-repo/"
+        }
+        maven {
+            url "https://maven.google.com"
+        }
+        jcenter()
+    }
+    dependencies {
+//        GreenDao3依赖
+//        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
+
+        //ObjectBox依赖
+//        classpath "io.objectbox:objectbox-gradle-plugin:$objectboxVersion"
+
+        //Realm依赖
+        classpath 'io.realm:realm-gradle-plugin:5.8.0'
+    }
+}
+
+apply plugin: 'com.android.library'
+//apply plugin: 'org.greenrobot.greendao'
+//apply plugin: 'io.objectbox'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'mips', 'x86', 'x86_64'
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a', 'arm64-v8a', 'mips', 'x86', 'x86_64'
+        }
+    }
+}
+
+//greendao {
+//    //版本号，升级时可配置
+//    schemaVersion 1
+//}
+
+dependencies {
+//    compile (rootProject.ext.dependencies['sqlcipher'])
+//    compile (rootProject.ext.dependencies['daocompat'])
+    compile (rootProject.ext.dependencies['room'])
+    annotationProcessor (rootProject.ext.dependencies['room-compiler'])
+    compile (rootProject.ext.dependencies['objectbox-release'])
+//    annotationProcessor (rootProject.ext.dependencies['objectbox-compiler'])
+    compile (rootProject.ext.dependencies['greendao'])
+//    annotationProcessor (rootProject.ext.dependencies['realm-compiler'])
+//    annotationProcessor (rootProject.ext.dependencies['realm-annotations'])
+}
